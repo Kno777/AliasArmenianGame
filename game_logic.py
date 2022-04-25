@@ -1,22 +1,12 @@
-from asyncio import open_connection
-from inspect import isabstract
-from sqlite3 import Time, connect
-from typing_extensions import Self
-from unittest import signals
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import Qt, QTimer, QRect
-import PySide2
 from menu_start import Ui_AliasGameMenuClass # menu start 
 from grupa_start import Ui_TeamNameClass # grupa start
 from rules_knoner import Ui_RulesTextClass #rules kanoner
 from text_start import Ui_TextNameClass # game text
 from winner import Ui_WinnerTeamClass # game winner
 import time
-import random
 import sys
-from ast import arg
-import imp
-import threading
 
 app = QtWidgets.QApplication(sys.argv)
 
@@ -369,8 +359,6 @@ def openNewGameWindow(): #bacum em errkrod patuhans
     ui.btn_StartGame.clicked.connect(openStartGame)
 
 ui.btn_NewGame.clicked.connect(openNewGameWindow) # newgame buttnem ashxtacnum 
-
-
 
 
 
